@@ -63,7 +63,8 @@ public class MainClass {
 
 		PropertyConfigurator.configure(is);
 
-		logger.info("\n\n==============================================================================\nPREBIEHA SPUSTANIE APLIKACIE\n\n");
+		logger.info("\n\n================================================"
+				+ "==============================\nPREBIEHA SPUSTANIE APLIKACIE\n\n");
 
 		mainWindow = new MainWindow();
 		dbLoginEdit = new DbLoginEditor();
@@ -161,24 +162,24 @@ public class MainClass {
 			usedUpWord.append(word.getSourceWord());
 			usedUpWord.append(" - ");
 			if (word.isUsed() == true)
-				usedUpWord.append("pouûitÈ slovo");
+				usedUpWord.append("pou≈æit√© slovo");
 			else if (word.getTag() == null)
-				usedUpWord.append("neidentifikovanÈ slovo");
+				usedUpWord.append("neidentifikovan√© slovo");
 			else
-				usedUpWord.append("nepouûitÈ slovo");
+				usedUpWord.append("nepou≈æit√© slovo");
 			usedUpWord.append("\n");
 		}
 
 		// builder pre vypis vlastnosti query do text area
 		final StringBuilder entitiesAndAtributes = new StringBuilder();
 
-		entitiesAndAtributes.append("PouûitÈ tabuæky: \n");
+		entitiesAndAtributes.append("Pou≈æit√© tabu¬æky: \n");
 		for (String entity : qcreator.getListOfUsedEntities()) {
 			entitiesAndAtributes.append(entity);
 			entitiesAndAtributes.append("\n");
 		}
 
-		entitiesAndAtributes.append("\nPouûitÈ atrib˙ty: \n");
+		entitiesAndAtributes.append("\nPou≈æit√© atrib√∫ty: \n");
 		for (WhereAtribute whereAtribute : qcreator.getWhereAtributes()) {
 			entitiesAndAtributes.append(whereAtribute.getTableName() + ": "
 					+ whereAtribute.getAtributeName() + " "
@@ -222,7 +223,7 @@ public class MainClass {
 			@Override
 			public void windowClosing(WindowEvent e) {
 				int confirmValue = JOptionPane.showOptionDialog(
-						mainWindow.getFrame(), "Chcete ukonËiù program?",
+						mainWindow.getFrame(), "Chcete ukon√®i¬ù program?",
 						"Exit Confirmation", JOptionPane.YES_NO_OPTION,
 						JOptionPane.QUESTION_MESSAGE, null, null, null);
 
@@ -321,8 +322,8 @@ public class MainClass {
 
 				JLabel label = new JLabel();
 
-				String aboutString = "<html><body>Datab·zov˝ prekladaË bol öpeci·lne vyvinut˝ ako s˙Ëasù bakal·rskÈho projektu Vytv·ranie"
-						+ " datab·zov˝ch dopytov v prirodzenom jazyku na FIIT STU v Bratislave.<br><br><br>Autor: SlavomÌr ä·rik<br>Ved˙ci pr·ce: Ing. Peter Lacko, PhD.</body></html>";
+				String aboutString = "<html><body>Datab√°zov√Ω preklada√® bol ≈°peci√°lne vyvinut√Ω ako s√∫√®as¬ù bakal√°rsk√©ho projektu Vytv√°ranie"
+						+ " datab√°zov√Ωch dopytov v prirodzenom jazyku na FIIT STU v Bratislave.<br><br><br>Autor: Slavom√≠r ≈†√°rik<br>Ved√∫ci pr√°ce: Ing. Peter Lacko, PhD.</body></html>";
 				label.setText(aboutString);
 
 				JOptionPane.showMessageDialog(mainWindow.getParentFrame(),
@@ -371,7 +372,7 @@ public class MainClass {
 				}).start();
 
 				JOptionPane.showMessageDialog(dbLoginEdit.getFrame(),
-						"PrÌstupovÈ ˙daje boli uloûenÈ.", "Info",
+						"Pr√≠stupov√© √∫daje boli ulo≈æen√©.", "Info",
 						JOptionPane.INFORMATION_MESSAGE);
 
 				dbLoginEdit.getFrame().setVisible(false);
@@ -435,12 +436,12 @@ public class MainClass {
 					new FileOutputStream(file, true), "UTF-8"));
 
 			if (success == true)
-				writer.append("¡NO - PouûÌvateæ dostal oËak·van˝ v˝stup.\n");
+				writer.append("√ÅNO - Pou≈æ√≠vate¬æ dostal o√®ak√°van√Ω v√Ωstup.\n");
 			else
-				writer.append("NIE - PouûÌvateæ nedostal oËak·van˝ v˝stup.\n");
+				writer.append("NIE - Pou≈æ√≠vate¬æ nedostal o√®ak√°van√Ω v√Ωstup.\n");
 
 			writer.append("VSTUP:\n" + input + "\n");
-			writer.append("V›STUP:\n" + query + "\n");
+			writer.append("V√ùSTUP:\n" + query + "\n");
 			writer.append("\n\n\n");
 			writer.close();
 		} catch (UnsupportedEncodingException e) {
