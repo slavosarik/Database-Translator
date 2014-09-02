@@ -1,7 +1,7 @@
 Database Translator
 =========
 
-Author: Slavomír Šárik
+Author: SlavomÃ­r Å Ã¡rik
 
 Bachelor thesis: Creation of database queries in native language
 
@@ -17,6 +17,8 @@ About
 ----
 
 Database interface, which is able to process user input in slovak language. In the following steps it will analyse input and map it to database to create final query. As a last step it query a database and show attributes of result to user.
+
+Tech info: Java, MySQL, Maven
 
 Installation
 --------------
