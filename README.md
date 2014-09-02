@@ -16,7 +16,21 @@ May 2014
 About
 ----
 
-database interface, which is able to process user input in slovak language. In the following steps it will analyse input and map it to database to create final query. As a last step it query a database and show attributes of result to user.
+Database interface, which is able to process user input in slovak language. In the following steps it will analyse input and map it to database to create final query. As a last step it query a database and show attributes of result to user.
+
+Installation
+--------------
+
+```sh
+git clone [git-repo-url] DatabaseTranslator
+cd DatabaseTranslator
+mvn package
+```
+
+##### Configure database connection properties
+
+* \src\main\resources\properties\database.properties
+
 
 Version
 ----
