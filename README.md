@@ -25,11 +25,13 @@ Installation
 git clone [git-repo-url] DatabaseTranslator
 cd DatabaseTranslator
 mvn package
+cd target
+java -jar DatabaseTranslator-1.0.jar
 ```
 
 ##### Configure database connection properties
 
-* \src\main\resources\properties\database.properties
+\src\main\resources\properties\database.properties
 
 
 Version
