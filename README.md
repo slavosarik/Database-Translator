@@ -5,7 +5,7 @@ Author: Slavomír Šárik
 
 Bachelor thesis: Creation of database queries in native language
 
-FACULTY OF INFORMATICS AND INFORMATION TECHNOLOGIES, Slovak University of Technology Bratislava, Slovakia
+Faculty of Informatics and Information technologies, Slovak University of Technology Bratislava, Slovakia
 
 Degree Course: Informatics
 
