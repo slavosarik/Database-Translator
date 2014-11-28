@@ -13,6 +13,8 @@ Supervisor: Ing. Peter Lacko, PhD.
 
 May 2014
 
+> [Link to bachelor thesis](http://www.crzp.sk/crzpopacxe?fs=3570770E49FB47C5B99367B8EA5E6325)
+
 About
 ----
 
